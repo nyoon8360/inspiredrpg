@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "inspiredrpg",
+	"version": "${version}",
+	"name": "Inspired RPG",
+	"description": "Mod that centers around adding progression to the game through RPG inspired mechanics and elements.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/inspired-rpg/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nyoon.inspiredrpg.InspiredRPG"
+		],
+		"client": [
+			"net.nyoon.inspiredrpg.InspiredRPGClient"
+		],
+		"fabric-datagen": [
+			"net.nyoon.inspiredrpg.InspiredRPGDataGenerator"
+		]
+	},
+	"mixins": [
+		"inspired-rpg.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
